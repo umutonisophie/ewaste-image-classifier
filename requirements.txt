@@ -1,0 +1,11 @@
+# Core pipeline. Install the CPU build of torch to avoid pulling CUDA:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0
+torchvision>=0.15
+Pillow>=9.0
+pandas>=1.5
+openpyxl>=3.1
+
+# Only needed by scraper.py and updater.py, which fetch images from Bing.
+# Not required to train or to run inference.
+# icrawler>=2.0

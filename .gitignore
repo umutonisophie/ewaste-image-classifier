@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# The dataset and weights are large binaries. The repaired checkpoint is
+# included deliberately because the original does not load; the images are not
+# committed, so clone the repository and supply the dataset separately.
+*.pth
+!ewaste_mobilenet_master_model.repaired.pth
+e-waste visual dataset/
+MASTER_e_waste_visual_dataset/
+dataset_split/
+BACKUP_*/
+
+# Spreadsheets
+*.xlsx
+!MASTER_e_waste_dataset.xlsx
+
+# Scraped output
+ewaste_visual_dataset/
+
+.DS_Store
+
+# LibreOffice lock files, left behind by opening a spreadsheet
+.~lock.*
+
+# Second scraped dataset variant, superseded by MASTER_e_waste_visual_dataset
+updated e-waste visual datasets/
